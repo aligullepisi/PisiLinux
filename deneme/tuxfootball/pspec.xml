@@ -1,0 +1,51 @@
+<PISI>
+    <Source>
+        <Name>tuxfootball</Name>
+        <Homepage>http://sourceforge.net/projects/tuxfootball</Homepage>
+        <Packager>
+            <Name>ali gulle </Name>
+            <Email>aligulle@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>klasik futbol oyunu</Summary>
+        <Description>eski tarz bir futbol oyunu</Description>
+        <BuildDependencies>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="415f3914a8fb99f64a9840fe77897e6b1c2b2c8c" type="targz">http://sourceforge.net/projects/tuxfootball/files/latest/download?source=typ_redirect/tuxfootball-0.3.35.0.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>tuxfootball</Name>
+        <Files>
+           <Path fileType="executable">/usr/bin</Path>
+           <Path fileType="data">/usr/share/applications</Path>
+           <Path fileType="data">/usr/share/pixmaps</Path>
+           <Path fileType="data">/usr/share/tuxfootball</Path>
+	   <Path fileType="data">/usr/share/icons/hicolor/128x128/apps</Path>
+           <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/tuxfootball/tuxfootball.destop" permission="0644" group="root" owner="root">tuxfootball.destop</AdditionalFile>
+            <AdditionalFile target="/usr/share/tuxfootball/tuxfootball.png" permission="0644" group="root" owner="root">tuxfootball.png</AdditionalFile>
+        </AdditionalFiles>
+        <RuntimeDependencies>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+        </RuntimeDependencies>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2015-01-25</Date>
+            <Version>0.3.35.0</Version>
+            <Comment>futbol oyunu</Comment>
+            <Name>ali gulle </Name>
+            <Email>aligulle@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
+
+<!-- By PiSiDo 2.0.0 -->
