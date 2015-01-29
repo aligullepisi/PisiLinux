@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Licensed under the GNU General Public License, version 3.
 # See the file http://www.gnu.org/copyleft/gpl.txt
-
+#bu pspec.xml ve actions.py  happy kity ve github dakı pisilinux deki belgeler kullanılarak oluşturulmuştur
 from pisi.actionsapi import autotools
 from pisi.actionsapi import get
 from pisi.actionsapi import pisitools
